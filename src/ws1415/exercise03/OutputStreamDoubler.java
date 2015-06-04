@@ -1,8 +1,6 @@
 package ws1415.exercise03;
 
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.OutputStream;
+import java.io.*;
 
 public class OutputStreamDoubler extends OutputStream {
     OutputStream o1 = null;
@@ -48,8 +46,12 @@ public class OutputStreamDoubler extends OutputStream {
                     new FileOutputStream("file1"),
                     new FileOutputStream("file2")
             );
-            // TODO: Fertig machen.
 
+            ObjectOutputStream oos = new ObjectOutputStream(osd);
+            oos.writeObject("Hello World");
+
+            oos.close();
+            osd.close();
         } catch (IOException ex) {
             ex.printStackTrace();
         }
