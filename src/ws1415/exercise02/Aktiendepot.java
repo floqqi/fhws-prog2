@@ -15,6 +15,9 @@ public class Aktiendepot {
 
     // b)
     public void bucheAktieEin(Aktie a) {
+        if(this.aktien.containsKey(a.getName())) {
+            return;
+        }
         this.aktien.put(a.getName(), a);
     }
 
