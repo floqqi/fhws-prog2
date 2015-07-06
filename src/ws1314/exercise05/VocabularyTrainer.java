@@ -44,7 +44,7 @@ public class VocabularyTrainer extends AbstractVocabularyTrainer {
 
     // c)
     public String getRandomFirstLanguageWord() {
-        return (String) this.dictionary.keySet().toArray()[(int) Math.floor(Math.random() * this.dictionary.size())];
+        return this.dictionary.keySet().toArray(new String[this.dictionary.size()])[(int) Math.floor(Math.random() * this.dictionary.size())];
     }
 
     // d)
