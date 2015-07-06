@@ -1,0 +1,3 @@
+Bei der Initialisierung der Unterklasse muss der Konstruktor der Oberklasse in der ersten Zeile des Konstruktors
+der Unterklasse aufgerufen werden. Ist dies nicht der Fall, greift der Standardmechanismus von Java und versucht
+den Standard-Konstruktor der Oberklasse aufzurufen. Existiert dieser nicht, wirft der Compiler einen Fehler.
