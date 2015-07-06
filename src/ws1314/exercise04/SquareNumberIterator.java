@@ -6,11 +6,11 @@ public class SquareNumberIterator implements Iterator<Integer> {
     private int i;
 
     public SquareNumberIterator() {
-        this.i = 0;
+        this.i = 1;
     }
 
-    public Integer value() {
-        return this.i * this.i;
+    public double value() {
+        return Math.pow(this.i, 2);
     }
 
     public boolean hasNext() {
@@ -18,7 +18,7 @@ public class SquareNumberIterator implements Iterator<Integer> {
     }
 
     public Integer next() {
-        int r = this.value();
+        int r = (int) this.value();
         this.i++;
         return r;
     }
