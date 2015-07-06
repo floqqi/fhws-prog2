@@ -9,7 +9,7 @@ public class Circle {
         return "Circle";
     }
 
-    // c) Es muss nur die Methode `getKind()` in einer neuen Klasse implementiert werden
+    // c) Es muss nur die Methode `toString()` in einer neuen Klasse implementiert werden
     //    und die Elternklasse muss nicht angepasst werden.
 
 }
