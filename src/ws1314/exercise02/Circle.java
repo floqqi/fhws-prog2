@@ -5,7 +5,7 @@ public class Circle {
     // a) Gibt an, ob das zu überprüfende Objekt eine Instanz der Ober(klasse) ist.
 
     // b)
-    public String getKind() {
+    public String toString() {
         return "Circle";
     }
 
